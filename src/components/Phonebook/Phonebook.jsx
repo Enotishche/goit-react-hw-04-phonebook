@@ -5,7 +5,7 @@ import ContactsFilter from './Filter/ContactsFilter';
 import { nanoid } from 'nanoid';
 import styles from './Phonebook.module.css';
 
-const Phonebook = ({ name, number }) => {
+const Phonebook = () => {
   const [contacts, setContacts] = useState(() => {
     return JSON.parse(window.localStorage.getItem('contacts')) ?? [];
   });
